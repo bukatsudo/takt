@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1{
+  font-size:1.5rem;
+	text-align: center;
+		font-family:YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+}
+
+
+h3{
+  font-size:1.1rem;
+	
+  text-align: center;
+  margin: 0 0 30px 0;
+	font-family:YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+}
+
+li{font-family:Tahoma, Geneva, "sans-serif"}
+
+p{
+  margin-top:20px;  
+	font-family:Tahoma, Geneva, "sans-serif"
+}
+
+small{
+  background:#000000;
+  color:#fff;
+  display: block;
+  text-align: center;
+  padding:20px;
+}
+
+#header{
+  background:#333;
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+}
+
+section{
+  padding:30px;
+}
+
+section:nth-child(2n){
+  background:#f3f3f3; 
+}
+
+#main-vidual img{
+  width: 100%;
+}
+
+#page-link{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#page-link li{
+  list-style: none;
+}
+
+#page-link li a{
+  color: #333;
+  padding:0 20px;
+  text-decoration: none;
+}
+
+#page-link li a::before{
+  font-size:0.5rem;
+  padding:0 5px 0 0;
+  color: #ccc;
+}
+
+a{
+	font-size: 0.9rem
+}
+
+#footer{
+  position: relative;
+  z-index: 2;
+}
+
+small{font-family:Tahoma, Geneva, "sans-serif"}
+
+
+
+#page-link li.current a,
+#page-link li a:hover{
+  color:#0481A2;
+}
+
+@media screen and (max-width: 1200px){
+#page-link {display:none}
+}
+
+
+
+#page-link li a{
+    display: block;
+    padding:10px 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+#page-link li{
+    margin-bottom:20px;
+}
+
+
+#page-link li a{
+  position: relative;
+}
+
+#page-link li a::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height:100%;
+  background:#000000;
+
+  transition:all .5s;
+}
+
+#page-link li.current a::after,
+#page-link li a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+#page-link li.current a,
+#page-link li a:hover{
+    color: #fff;
+}
+
+.lead{
+  padding: 50px 20px;
+	
+}
+
+.hamburger-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+	
+}
+
+.hamburger-menu {
+	position: fixed;
+	  left: 30px;
+	top:20px;
+}
+
+.hamburger-menu + .sidenavs:target {
+  overflow-x: visible;
+  width: 100%;
+  display:block;
+	
+}
+.sidenavs:target {
+  overflow-x: hidden;
+  width: 0;
+}
+
+.sidenavs {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenavs a {
+  padding: 8px 8px 8px 32px;
+  font-family: Tahoma, Geneva, "sans-serif";
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-weight:bold;
+}
+.sidenavs a:hover {
+  color: white;
+}
+.sidenavs .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin-left: 50px;
+	font-family: Georgia, "Times New Roman", Times, "serif"
+}
+
+@media screen and (min-width: 1200px){
+.hamburger-menu div {display:none}
+}
+
+
+.form {
+  display       : inline-block;
+  font-size     : 10pt;     
+  text-align    : center;   
+  cursor        : pointer;   
+  padding       : 17px 44px; 
+  background    : #000000;     
+  color         : #ffffff; 
+  line-height   : 1em;       
+  transition    : .3s;        
+  border        : 2px solid #000000;
+  font-family :YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+}
+.form:hover {
+  color         : #000000;   
+  background    : #ffffff; 
+}
+
+.button{
+	text-align: center;
+}
+
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 13px;
+  bottom: 13px;
+  background: #86C6CE;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f106';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
