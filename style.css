@@ -208,7 +208,8 @@ small{font-family:Tahoma, Geneva, "sans-serif"}
 
 .form {
   display       : inline-block;
-  font-size     : 70%;     
+  font-size     : 40px;  
+  font-size     : 100%;     
   text-align    : center;   
   cursor        : pointer;   
   padding       : 17px 44px; 
