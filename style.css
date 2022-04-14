@@ -2,7 +2,7 @@
 /* CSS Document */
 
 h1{
-  font-size:25px;
+  font-size:30px;
 	text-align: center;
 		font-family:YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
 }
@@ -15,11 +15,9 @@ h3{
   margin: 0 0 30px 0;
 	font-family:YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
 }
-
 h4{
 	font-family:YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
 }
-
 
 li{font-family:Tahoma, Geneva, "sans-serif"}
 
@@ -95,7 +93,7 @@ small{font-family:Tahoma, Geneva, "sans-serif"}
   color:#0481A2;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1400px){
 #page-link {display:none}
 }
 
@@ -206,7 +204,7 @@ small{font-family:Tahoma, Geneva, "sans-serif"}
 	font-family: Georgia, "Times New Roman", Times, "serif"
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1400px){
 .hamburger-menu div {display:none}
 }
 
@@ -265,4 +263,4 @@ small{font-family:Tahoma, Geneva, "sans-serif"}
   text-align: center;
 }
 
-    
+  
